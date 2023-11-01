@@ -11,6 +11,7 @@ def print_list():
     print('Listan sisältö:')
     for tieto in my_list:
         print(tieto)
+    print()
 
 # Function to print the item count on the list
 def print_item_count():
@@ -38,21 +39,25 @@ def delete_item():
     else:
         print(f'Tietoa "{item_to_delete}" ei löytynyt listasta.')
 
-
+# Function to sort the list. Doesnt matter if the letters are upper or lower case it wont bug.
+def sort_list():
+    my_list.sort(key=str.upper)
+    print('Lista on järjestetty aakkosjärjestykseen.')
+    print(my_list)
 
 # Loop that will keep on going until the user ends the program
 # This loop makes the program run if the user wants to add more strings to the list. 
 # Also all the other functionalities are inside this loop. 
 
 while True:
-    print()
     print('Valitse toiminto: ')
     print('1. Lisää listaan tietoa ')
     print('2. Tulosta lista ')
     print('3. Tulosta listan pituus')
     print('4. Etsi listasta')
     print('5. Poista tieto listasta')
-    print('6. Lopeta ohjelma')
+    print('6. Järjestä lista aakkosjärjestykseen')
+    print('7. Lopeta ohjelma')
     print()
 
     valinta = input('Syötä valintasi: ')
@@ -71,8 +76,11 @@ while True:
 
     elif valinta == '5':
         delete_item()
-
+    
     elif valinta == '6':
+        sort_list()
+
+    elif valinta == '7':
         print('Ohjelma päättyy. ')
         print()
         break
