@@ -28,6 +28,18 @@ def search_item():
     if not found:
         print(f'Tietoa "{item_to_search}" ei löytynyt listasta.')
 
+
+# Function to delete item from list 
+def delete_item():
+    item_to_delete = input('Syötä poistettava tieto: ')
+    if item_to_delete in my_list:
+        my_list.remove(item_to_delete)
+        print(f'Tieto "{item_to_delete}" poistettu listasta.')
+    else:
+        print(f'Tietoa "{item_to_delete}" ei löytynyt listasta.')
+
+
+
 # Loop that will keep on going until the user ends the program
 # This loop makes the program run if the user wants to add more strings to the list. 
 # Also all the other functionalities are inside this loop. 
@@ -39,7 +51,8 @@ while True:
     print('2. Tulosta lista ')
     print('3. Tulosta listan pituus')
     print('4. Etsi listasta')
-    print('5. Lopeta ohjelma')
+    print('5. Poista tieto listasta')
+    print('6. Lopeta ohjelma')
     print()
 
     valinta = input('Syötä valintasi: ')
@@ -57,6 +70,9 @@ while True:
         search_item()
 
     elif valinta == '5':
+        delete_item()
+
+    elif valinta == '6':
         print('Ohjelma päättyy. ')
         print()
         break
