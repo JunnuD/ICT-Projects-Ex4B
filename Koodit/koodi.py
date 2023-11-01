@@ -12,10 +12,12 @@ def print_list():
     for tieto in my_list:
         print(tieto)
 
+# Function to print the item count on the list
 def print_item_count():
     count = len(my_list)
     print(f'Listassa on {count} kpl tietoja ')
 
+# Function to search for a specific value inside the list
 def search_item():
     item_to_search = input('Syötä etsittävä tieto: ')
     found = False
@@ -25,6 +27,10 @@ def search_item():
             found = True
     if not found:
         print(f'Tietoa "{item_to_search}" ei löytynyt listasta.')
+
+# Loop that will keep on going until the user ends the program
+# This loop makes the program run if the user wants to add more strings to the list. 
+# Also all the other functionalities are inside this loop. 
 
 while True:
     print()
