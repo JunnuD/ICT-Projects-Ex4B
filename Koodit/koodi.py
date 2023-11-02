@@ -9,6 +9,7 @@ def add_data():
     tieto = input('Syötä tieto: ')
     my_list.append(tieto)
     print('Tieto lisätty listaan!')
+    print()
 
 # Function to print the list
 def print_list():
@@ -21,6 +22,7 @@ def print_list():
 def print_item_count():
     count = len(my_list)
     print(f'Listassa on {count} kpl tietoja ')
+    print()
 
 # Function to search for a specific value inside the list
 def search_item():
@@ -32,22 +34,28 @@ def search_item():
             found = True
     if not found:
         print(f'Tietoa "{item_to_search}" ei löytynyt listasta.')
+    print()
 
 
 # Function to delete item from list 
 def delete_item():
+    print()
     item_to_delete = input('Syötä poistettava tieto: ')
     if item_to_delete in my_list:
         my_list.remove(item_to_delete)
         print(f'Tieto "{item_to_delete}" poistettu listasta.')
     else:
         print(f'Tietoa "{item_to_delete}" ei löytynyt listasta.')
+    print()
+
 
 # Function to sort the list. Doesnt matter if the letters are upper or lower case it wont bug.
 def sort_list():
+    print()
     my_list.sort(key=str.upper)
     print('Lista on järjestetty aakkosjärjestykseen.')
     print(my_list)
+    print()
 
 # Loop that will keep on going until the user ends the program
 # This loop makes the program run if the user wants to add more strings to the list. 
