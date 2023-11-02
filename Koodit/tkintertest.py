@@ -4,6 +4,7 @@
 
 # Not working, but tried and wanted to leave this here still. 
 # Gets out an GUI block, but the buttons aren't working and also flashing weirdly.
+# Also 2.11. getting importing error on my laptop with tkinter. 
 
 import tkinter as tk
 from lista import my_list
