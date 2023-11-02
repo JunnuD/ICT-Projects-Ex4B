@@ -94,6 +94,7 @@ while True:
 
     elif valinta == '7':
         print('Ohjelma päättyy. ')
+        print('Kiva kun kokeilit :) ')
         print()
         break
 
