@@ -1,3 +1,7 @@
+# File name koodi.py
+# Author: Junnu Danhammer
+# Description: List program that has different functionalities to do with the list.
+
 from lista import my_list
 
 # Function to add data to the list

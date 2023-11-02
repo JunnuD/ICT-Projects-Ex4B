@@ -1,3 +1,10 @@
+# File name tkintertest.py
+# Author: Junnu Danhammer
+# Description: This is the same code as in koodi.py, but i tried to implement the GUI with Tkinter.
+
+# Not working, but tried and wanted to leave this here still. 
+# Gets out an GUI block, but the buttons aren't working and also flashing weirdly.
+
 import tkinter as tk
 from lista import my_list
 
